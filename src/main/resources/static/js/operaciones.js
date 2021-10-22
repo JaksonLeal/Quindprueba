@@ -1,15 +1,15 @@
-$(document).ready(function() {
-	//on ready
+$(document).ready(function() { 
+	//el codigo dentro se ejecutacuando toda la pagina este lista
 });
 
-async function sumar(){
-	let datos = {};
+async function sumar(){ //async function devuelve elemento promise
+	let datos = {};  // variable let solo puede ser usada en el metodo
 	
 	datos.num1 = document.getElementById('num1').value;
 	datos.num2 = document.getElementById('num2').value;
 	
-	const request = await fetch('sumar', {
-    	method: 'POST',
+	const request = await fetch('sumar', { //await espera hasta que el promise este resuelto para continuar
+    	method: 'POST', //metodo post se usa para enviar datos al servidor 
     	headers: {
       	'Accept': 'application/json',
       	'Content-Type': 'application/json'

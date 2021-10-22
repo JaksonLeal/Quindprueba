@@ -1,4 +1,4 @@
-package com.pruebatecnica.demo;
+package com.pruebatecnica.demo.modelos;
 
 public class Numeros {
 
